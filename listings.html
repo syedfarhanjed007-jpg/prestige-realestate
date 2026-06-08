@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listings — Prestige Real Estate</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">PRESTIGE<span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="listings.html" class="active">Listings</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="tel:+18005551234" class="nav-phone"><i class="fas fa-phone"></i> (800) 555-1234</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/hero.jpg')"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <h1>Our Listings</h1>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Listings</div>
+    </div>
+  </div>
+
+  <!-- Listings Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar fade-in">
+        <div class="filter-field">
+          <label>Location</label>
+          <select>
+            <option>All Locations</option>
+            <option>Beverly Hills</option>
+            <option>Manhattan</option>
+            <option>Miami Beach</option>
+            <option>Malibu</option>
+            <option>Aspen</option>
+            <option>Hamptons</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label>Type</label>
+          <select>
+            <option>All Types</option>
+            <option>Estate</option>
+            <option>Penthouse</option>
+            <option>Villa</option>
+            <option>Condo</option>
+            <option>Townhouse</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label>Price Range</label>
+          <select>
+            <option>Any Price</option>
+            <option>$1M - $5M</option>
+            <option>$5M - $10M</option>
+            <option>$10M - $25M</option>
+            <option>$25M+</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label>Bedrooms</label>
+          <select>
+            <option>Any</option>
+            <option>3+</option>
+            <option>4+</option>
+            <option>5+</option>
+            <option>6+</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label>Bathrooms</label>
+          <select>
+            <option>Any</option>
+            <option>3+</option>
+            <option>4+</option>
+            <option>5+</option>
+            <option>6+</option>
+          </select>
+        </div>
+        <button class="btn-search-filter"><i class="fas fa-search"></i> Search</button>
+      </div>
+
+      <!-- Listings Header -->
+      <div class="listings-header">
+        <p>Showing <strong>8</strong> luxury properties</p>
+        <select class="sort-select">
+          <option value="default">Sort by: Featured</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="size">Size: Largest</option>
+        </select>
+      </div>
+
+      <!-- Property Grid -->
+      <div class="listings-grid">
+
+        <!-- Property 1 -->
+        <div class="property-card" data-expandable data-price="12500000" data-size="9200">
+          <div class="property-card-img">
+            <img src="images/prop1.jpg" alt="Beverly Hills Estate">
+            <span class="property-tag">Featured</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-price">$12,500,000</div>
+            <div class="property-address">1247 Hillcrest Ave, Beverly Hills</div>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 6</span>
+              <span><i class="fas fa-bath"></i> 8</span>
+              <span><i class="fas fa-vector-square"></i> 9,200 sqft</span>
+            </div>
+          </div>
+          <div class="property-detail">
+            <div class="property-detail-grid">
+              <div>
+                <h4>Property Description</h4>
+                <p>An architectural masterpiece nestled in the hills of Beverly Hills. This estate features soaring ceilings, floor-to-ceiling windows, a gourmet chef's kitchen, and a resort-style infinity pool overlooking the city.</p>
+                <p>Recently renovated with the finest materials including Italian marble, custom millwork, and smart home technology throughout.</p>
+              </div>
+              <div>
+                <h4>Amenities</h4>
+                <div class="amenities">
+                  <span class="amenity-tag">Infinity Pool</span>
+                  <span class="amenity-tag">Home Theater</span>
+                  <span class="amenity-tag">Wine Cellar</span>
+                  <span class="amenity-tag">Smart Home</span>
+                  <span class="amenity-tag">3-Car Garage</span>
+                  <span class="amenity-tag">Garden</span>
+                  <span class="amenity-tag">Gym</span>
+                  <span class="amenity-tag">Guest House</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="property-card" data-expandable data-price="18750000" data-size="7800">
+          <div class="property-card-img">
+            <img src="images/prop2.jpg" alt="Manhattan Penthouse">
+            <span class="property-tag">New</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-price">$18,750,000</div>
+            <div class="property-address">432 Park Ave, PH 88, New York</div>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 5</span>
+              <span><i class="fas fa-bath"></i> 6</span>
+              <span><i class="fas fa-vector-square"></i> 7,800 sqft</span>
+            </div>
+          </div>
+          <div class="property-detail">
+            <div class="property-detail-grid">
+              <div>
+                <h4>Property Description</h4>
+                <p>Perched above Manhattan with breathtaking 360-degree views, this penthouse defines urban luxury. Features include 12-foot ceilings, a private elevator, and a wraparound terrace spanning 2,000 sqft.</p>
+                <p>Designed by a world-renowned architect with bespoke finishes throughout.</p>
+              </div>
+              <div>
+                <h4>Amenities</h4>
+                <div class="amenities">
+                  <span class="amenity-tag">360° Views</span>
+                  <span class="amenity-tag">Private Terrace</span>
+                  <span class="amenity-tag">Concierge</span>
+                  <span class="amenity-tag">Spa</span>
+                  <span class="amenity-tag">Private Elevator</span>
+                  <span class="amenity-tag">Doorman</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="property-card" data-expandable data-price="24000000" data-size="11500">
+          <div class="property-card-img">
+            <img src="images/prop3.jpg" alt="Malibu Oceanfront">
+            <span class="property-tag">Exclusive</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-price">$24,000,000</div>
+            <div class="property-address">21550 Pacific Coast Hwy, Malibu</div>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 7</span>
+              <span><i class="fas fa-bath"></i> 9</span>
+              <span><i class="fas fa-vector-square"></i> 11,500 sqft</span>
+            </div>
+          </div>
+          <div class="property-detail">
+            <div class="property-detail-grid">
+              <div>
+                <h4>Property Description</h4>
+                <p>A rare oceanfront estate on 1.5 acres with 200 feet of pristine beach frontage. The residence features an open floor plan designed to maximize ocean views from every room.</p>
+                <p>Includes a private beach access, oceanfront pool, and separate guest quarters.</p>
+              </div>
+              <div>
+                <h4>Amenities</h4>
+                <div class="amenities">
+                  <span class="amenity-tag">Beach Access</span>
+                  <span class="amenity-tag">Ocean Pool</span>
+                  <span class="amenity-tag">Guest House</span>
+                  <span class="amenity-tag">Chef's Kitchen</span>
+                  <span class="amenity-tag">Helipad</span>
+                  <span class="amenity-tag">Tennis Court</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 4 -->
+        <div class="property-card" data-expandable data-price="8900000" data-size="6500">
+          <div class="property-card-img">
+            <img src="images/prop4.jpg" alt="Miami Beach Villa">
+            <span class="property-tag">For Sale</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-price">$8,900,000</div>
+            <div class="property-address">45 Star Island Dr, Miami Beach</div>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 5</span>
+              <span><i class="fas fa-bath"></i> 6</span>
+              <span><i class="fas fa-vector-square"></i> 6,500 sqft</span>
+            </div>
+          </div>
+          <div class="property-detail">
+            <div class="property-detail-grid">
+              <div>
+                <h4>Property Description</h4>
+                <p>Tropical paradise on prestigious Star Island. This modern villa features sleek contemporary design, floor-to-ceiling glass walls, and unobstructed bay views.</p>
+                <p>Private dock, resort-style pool, and lush tropical landscaping complete this waterfront masterpiece.</p>
+              </div>
+              <div>
+                <h4>Amenities</h4>
+                <div class="amenities">
+                  <span class="amenity-tag">Private Dock</span>
+                  <span class="amenity-tag">Bay Views</span>
+                  <span class="amenity-tag">Pool</span>
+                  <span class="amenity-tag">Summer Kitchen</span>
+                  <span class="amenity-tag">Smart Home</span>
+                  <span class="amenity-tag">Security</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 5 -->
+        <div class="property-card" data-expandable data-price="15200000" data-size="8800">
+          <div class="property-card-img">
+            <img src="images/prop5.jpg" alt="Aspen Mountain Estate">
+            <span class="property-tag">Featured</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-price">$15,200,000</div>
+            <div class="property-address">678 Mountain Laurel Dr, Aspen</div>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 6</span>
+              <span><i class="fas fa-bath"></i> 7</span>
+              <span><i class="fas fa-vector-square"></i> 8,800 sqft</span>
+            </div>
+          </div>
+          <div class="property-detail">
+            <div class="property-detail-grid">
+              <div>
+                <h4>Property Description</h4>
+                <p>A ski-in/ski-out mountain estate with panoramic views of Aspen Mountain. Crafted with reclaimed timber and native stone, this home perfectly blends rustic elegance with modern luxury.</p>
+                <p>Features include a private ski room, heated outdoor pool, and a great room with 25-foot ceilings.</p>
+              </div>
+              <div>
+                <h4>Amenities</h4>
+                <div class="amenities">
+                  <span class="amenity-tag">Ski-In/Ski-Out</span>
+                  <span class="amenity-tag">Heated Pool</span>
+                  <span class="amenity-tag">Wine Cellar</span>
+                  <span class="amenity-tag">Home Theater</span>
+                  <span class="amenity-tag">Sauna</span>
+                  <span class="amenity-tag">Fire Pit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 6 -->
+        <div class="property-card" data-expandable data-price="6750000" data-size="5200">
+          <div class="property-card-img">
+            <img src="images/prop6.jpg" alt="Hamptons Estate">
+            <span class="property-tag">New</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-price">$6,750,000</div>
+            <div class="property-address">142 Meadow Lane, Southampton</div>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 5</span>
+              <span><i class="fas fa-bath"></i> 5</span>
+              <span><i class="fas fa-vector-square"></i> 5,200 sqft</span>
+            </div>
+          </div>
+          <div class="property-detail">
+            <div class="property-detail-grid">
+              <div>
+                <h4>Property Description</h4>
+                <p>Classic Hamptons shingle-style estate on 2 acres with ocean views. Recently restored with modern amenities while preserving its timeless charm and character.</p>
+                <p>Features a wraparound porch, heated gunite pool, and direct beach path access.</p>
+              </div>
+              <div>
+                <h4>Amenities</h4>
+                <div class="amenities">
+                  <span class="amenity-tag">Ocean Views</span>
+                  <span class="amenity-tag">Gunite Pool</span>
+                  <span class="amenity-tag">Tennis Court</span>
+                  <span class="amenity-tag">Beach Access</span>
+                  <span class="amenity-tag">Library</span>
+                  <span class="amenity-tag">Garden</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 7 -->
+        <div class="property-card" data-expandable data-price="32000000" data-size="14200">
+          <div class="property-card-img">
+            <img src="images/prop7.jpg" alt="Bel Air Mega Estate">
+            <span class="property-tag">Exclusive</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-price">$32,000,000</div>
+            <div class="property-address">10940 Bel Air Crest Rd, Los Angeles</div>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 9</span>
+              <span><i class="fas fa-bath"></i> 12</span>
+              <span><i class="fas fa-vector-square"></i> 14,200 sqft</span>
+            </div>
+          </div>
+          <div class="property-detail">
+            <div class="property-detail-grid">
+              <div>
+                <h4>Property Description</h4>
+                <p>A landmark Bel Air estate offering unparalleled luxury on 3 gated acres. This contemporary masterpiece features walls of glass, a 20-car motor court, and sweeping city-to-ocean views.</p>
+                <p>Includes a championship tennis court, resort pool complex, and staff quarters.</p>
+              </div>
+              <div>
+                <h4>Amenities</h4>
+                <div class="amenities">
+                  <span class="amenity-tag">20-Car Garage</span>
+                  <span class="amenity-tag">Tennis Court</span>
+                  <span class="amenity-tag">Pool Complex</span>
+                  <span class="amenity-tag">Staff Quarters</span>
+                  <span class="amenity-tag">Gym</span>
+                  <span class="amenity-tag">Spa</span>
+                  <span class="amenity-tag">Home Theater</span>
+                  <span class="amenity-tag">Security</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 8 -->
+        <div class="property-card" data-expandable data-price="9800000" data-size="7100">
+          <div class="property-card-img">
+            <img src="images/prop8.jpg" alt="Pacific Heights Mansion">
+            <span class="property-tag">For Sale</span>
+          </div>
+          <div class="property-card-body">
+            <div class="property-price">$9,800,000</div>
+            <div class="property-address">2898 Broadway, Pacific Heights, SF</div>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 5</span>
+              <span><i class="fas fa-bath"></i> 6</span>
+              <span><i class="fas fa-vector-square"></i> 7,100 sqft</span>
+            </div>
+          </div>
+          <div class="property-detail">
+            <div class="property-detail-grid">
+              <div>
+                <h4>Property Description</h4>
+                <p>A magnificent Pacific Heights Victorian with panoramic Bay views stretching to the Golden Gate Bridge. Meticulously restored with exquisite period details and modern luxury.</p>
+                <p>Features formal entertaining rooms, a chef's kitchen, and a private garden oasis.</p>
+              </div>
+              <div>
+                <h4>Amenities</h4>
+                <div class="amenities">
+                  <span class="amenity-tag">Bay Views</span>
+                  <span class="amenity-tag">Chef's Kitchen</span>
+                  <span class="amenity-tag">Wine Cellar</span>
+                  <span class="amenity-tag">Garden</span>
+                  <span class="amenity-tag">Library</span>
+                  <span class="amenity-tag">Au Pair Suite</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="fade-in">Can't Find What You're Looking For?</h2>
+      <p class="fade-in">Our team has access to exclusive off-market properties. Let us help you find your perfect match.</p>
+      <a href="contact.html" class="btn-gold fade-in">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">PRESTIGE<span>.</span></a>
+          <p>Defining luxury real estate since 2009. We connect exceptional people with extraordinary properties across the most coveted locations worldwide.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Buying</a></li>
+            <li><a href="#">Selling</a></li>
+            <li><a href="#">Investment</a></li>
+            <li><a href="#">Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 9595 Wilshire Blvd, Suite 400<br>Beverly Hills, CA 90212</p>
+          <p><i class="fas fa-phone"></i> (800) 555-1234</p>
+          <p><i class="fas fa-envelope"></i> info@prestigerealty.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Prestige Real Estate. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
